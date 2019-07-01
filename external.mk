@@ -1,1 +1,1 @@
-include $(sort $(wildcard $(BR2_EXTERNAL_WPE_PATH)/package/*/*.mk))
+include $(sort $(wildcard $(NERVES_DEFCONFIG_DIR)/package/*/*.mk))
