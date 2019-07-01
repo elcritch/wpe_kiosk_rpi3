@@ -1,4 +1,7 @@
-# Add project-specific packages for Buildroot here
-#
-# If these are non-proprietary, please consider contributing them back to
-# Nerves or Buildroot.
+# Include all package configuration snippets from the overlay.
+source "$BR2_EXTERNAL_WPE_PATH/package/cog/Config.in"
+source "$BR2_EXTERNAL_WPE_PATH/package/eglinfo/Config.in"
+source "$BR2_EXTERNAL_WPE_PATH/package/libwpe/Config.in"
+source "$BR2_EXTERNAL_WPE_PATH/package/wpebackend-fdo/Config.in"
+source "$BR2_EXTERNAL_WPE_PATH/package/wpebackend-rdk/Config.in"
+source "$BR2_EXTERNAL_WPE_PATH/package/wpewebkit/Config.in"
