@@ -1,0 +1,3 @@
+[submodule "buildroot-wpe"]
+	path = buildroot-wpe
+	url = https://github.com/Igalia/buildroot-wpe.git
