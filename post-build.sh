@@ -2,6 +2,9 @@
 
 set -e
 
+cp $TARGET_DIR/usr/lib/libGLESv2.so $TARGET_DIR/usr/lib/libGLESv2.so.2
+cp $TARGET_DIR/usr/lib/libEGL.so $TARGET_DIR/usr/lib/libEGL.so.1
+
 # Create the revert script for manually switching back to the previously
 # active firmware.
 mkdir -p $TARGET_DIR/usr/share/fwup

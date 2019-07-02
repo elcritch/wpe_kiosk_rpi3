@@ -1,0 +1,26 @@
+{
+  "locator":"libWPEFrameworkWebKitBrowser.so",
+  "classname":"WebKitBrowser",
+  "precondition":[
+   "Graphics",
+   "WebSource"
+  ],
+  "autostart":true,
+  "configuration":{
+   "url":"http://127.0.0.1:8080",
+   "useragent":"Mozilla/5.0 (Macintosh, Intel Mac OS X 10_11_4) AppleWebKit/602.1.28+ (KHTML, like Gecko) Version/9.1 Safari/601.5.17 WPE-Reference",
+   "injectedbundle":"libWPEInjectedBundle.so",
+   "transparent":false,
+   "compositor":"noaa",
+   "inspector":"0.0.0.0:9998",
+   "fps":false,
+   "cursor":false,
+   "touch":true,
+   "msebuffers":"audio:2m,video:15m,text:1m",
+   "memoryprofile":"128m",
+   "memorypressure":"databaseprocess:50m,networkprocess:80m,webprocess:250m,rpcprocess:80m",
+   "mediadiskcache":false,
+   "diskcache":"512m",
+   "xhrcache":true
+  }
+ }
