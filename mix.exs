@@ -10,7 +10,7 @@ defmodule NervesSystemRpi3.MixProject do
     [
       app: @app,
       version: @version,
-      elixir: "~> 1.6",
+      elixir: "~> 1.9",
       compilers: Mix.compilers() ++ [:nerves_package],
       nerves_package: nerves_package(),
       description: description(),
@@ -48,9 +48,9 @@ defmodule NervesSystemRpi3.MixProject do
 
   defp deps do
     [
-      {:nerves, "~> 1.3", runtime: false},
-      {:nerves_system_br, "1.7.2", runtime: false},
-      {:nerves_toolchain_arm_unknown_linux_gnueabihf, "1.1.0", runtime: false},
+      {:nerves, "~> 1.5", runtime: false},
+      {:nerves_system_br, "1.8.5", runtime: false},
+      {:nerves_toolchain_arm_unknown_linux_gnueabihf, "1.2.0", runtime: false},
       {:nerves_system_linter, "~> 0.3.0", runtime: false},
       {:ex_doc, "~> 0.18", only: [:dev, :test], runtime: false}
     ]
