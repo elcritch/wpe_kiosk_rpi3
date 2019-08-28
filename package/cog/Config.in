@@ -1,4 +1,4 @@
-config BR2_PACKAGE_COG
+config BR2_PACKAGE_COG_RDK
 	bool "cog"
 	depends on BR2_PACKAGE_WPEWEBKIT
 	help
@@ -7,9 +7,9 @@ config BR2_PACKAGE_COG
 	  not provide any chrome, and is suitable to be used
 	  as a Web application container.
 
-if BR2_PACKAGE_COG
+if BR2_PACKAGE_COG_RDK
 
-config BR2_PACKAGE_COG_PLATFORM_FDO_ARCH_SUPPORTS
+config BR2_PACKAGE_COG_RDK_PLATFORM_FDO_ARCH_SUPPORTS
 	bool
 	default y
 	depends on BR2_PACKAGE_HAS_LIBEGL_WAYLAND
@@ -17,30 +17,30 @@ config BR2_PACKAGE_COG_PLATFORM_FDO_ARCH_SUPPORTS
 	depends on BR2_PACKAGE_WPEBACKEND_FDO
 
 comment "cog fdo platform plugin requires egl, gles, wayland"
-	depends on !BR2_PACKAGE_COG_PLATFORM_FDO_ARCH_SUPPORTS
+	depends on !BR2_PACKAGE_COG_RDK_PLATFORM_FDO_ARCH_SUPPORTS
 
-config BR2_PACKAGE_COG_PLATFORM_FDO
+config BR2_PACKAGE_COG_RDK_PLATFORM_FDO
 	bool "fdo platform"
-	depends on BR2_PACKAGE_COG_PLATFORM_FDO_ARCH_SUPPORTS
+	depends on BR2_PACKAGE_COG_RDK_PLATFORM_FDO_ARCH_SUPPORTS
 	help
 	  Support platform plug-in which uses FreeDesktop.Org's
 	  technologies for windowing. Choose this to support output
 	  to Wayland compositor.
 
-config BR2_PACKAGE_COG_PROGRAMS
+config BR2_PACKAGE_COG_RDK_PROGRAMS
 	bool "build and install programs"
 	help
 	  Build and install the "cog" and "cogctl" programs.
 
-if BR2_PACKAGE_COG_PROGRAMS
+if BR2_PACKAGE_COG_RDK_PROGRAMS
 
-config BR2_PACKAGE_COG_PROGRAMS_DBUS_SYSTEM_BUS
+config BR2_PACKAGE_COG_RDK_PROGRAMS_DBUS_SYSTEM_BUS
 	bool "expose remote control interface on system bus"
 	help
 	  If enabled, the D-Bus remote control interface is exposed
 	  on the system bus, instead of the session bus.
 
-config BR2_PACKAGE_COG_PROGRAMS_HOME_URI
+config BR2_PACKAGE_COG_RDK_PROGRAMS_HOME_URI
 	string "home uri"
 	default ""
 	help
