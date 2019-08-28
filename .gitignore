@@ -23,3 +23,4 @@ erl_crash.dump
 wpe_kiosk_rpi3-portable-1.7.2-C76C67C.tar.gz
 wpe_kiosk_rpi3-*.tar.gz
 .elixir_ls
+buildroot-*

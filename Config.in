@@ -1,9 +1,8 @@
 # Include all package configuration snippets from the overlay.
-#source "$NERVES_DEFCONFIG_DIR/package/cog/Config.in"
-#source "$NERVES_DEFCONFIG_DIR/package/eglinfo/Config.in"
-#source "$NERVES_DEFCONFIG_DIR/package/libwpe/Config.in"
-#source "$NERVES_DEFCONFIG_DIR/package/wpebackend-fdo/Config.in"
-#source "$NERVES_DEFCONFIG_DIR/package/wpebackend-rdk/Config.in"
-#source "$NERVES_DEFCONFIG_DIR/package/wpewebkit/Config.in"
+source "$NERVES_DEFCONFIG_DIR/package/cog-rdk/Config.in"
+source "$NERVES_DEFCONFIG_DIR/package/eglinfo/Config.in"
+source "$NERVES_DEFCONFIG_DIR/package/libwpe-rdk/Config.in"
+source "$NERVES_DEFCONFIG_DIR/package/wpebackend-rdk/Config.in"
+source "$NERVES_DEFCONFIG_DIR/package/wpewebkit-rdk/Config.in"
 
 
