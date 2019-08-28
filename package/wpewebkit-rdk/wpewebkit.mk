@@ -14,7 +14,8 @@ WPEWEBKIT_RDK_LICENSE_FILES = \
 	Source/WebCore/LICENSE-LGPL-2.1
 WPEWEBKIT_RDK_DEPENDENCIES = host-cmake host-ruby host-flex host-bison \
 	host-gperf harfbuzz icu jpeg libegl libepoxy libgcrypt libsoup \
-	libxml2 libwpe sqlite webp
+	libxml2 sqlite webp
+	# libwpe_rdk
 WPEWEBKIT_RDK_CONF_OPTS = -DPORT=WPE
 
 # JSC JIT is supported on: i386, x86_64, aarch64 and mips32le target archs.

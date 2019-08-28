@@ -1,5 +1,5 @@
 config BR2_PACKAGE_COG_RDK
-	bool "cog-rdk"
+	bool "cog"
 	depends on BR2_PACKAGE_WPEWEBKIT_RDK
 	help
 	  Single “window” launcher for the WebKit WPE port, and
@@ -8,24 +8,6 @@ config BR2_PACKAGE_COG_RDK
 	  as a Web application container.
 
 if BR2_PACKAGE_COG_RDK
-
-config BR2_PACKAGE_COG_RDK_PLATFORM_FDO_ARCH_SUPPORTS
-	bool
-	default y
-	depends on BR2_PACKAGE_HAS_LIBEGL_WAYLAND
-	depends on BR2_PACKAGE_HAS_LIBGLES
-	depends on BR2_PACKAGE_WPEBACKEND_FDO
-
-comment "cog fdo platform plugin requires egl, gles, wayland"
-	depends on !BR2_PACKAGE_COG_RDK_PLATFORM_FDO_ARCH_SUPPORTS
-
-config BR2_PACKAGE_COG_RDK_PLATFORM_FDO
-	bool "fdo platform"
-	depends on BR2_PACKAGE_COG_RDK_PLATFORM_FDO_ARCH_SUPPORTS
-	help
-	  Support platform plug-in which uses FreeDesktop.Org's
-	  technologies for windowing. Choose this to support output
-	  to Wayland compositor.
 
 config BR2_PACKAGE_COG_RDK_PROGRAMS
 	bool "build and install programs"
