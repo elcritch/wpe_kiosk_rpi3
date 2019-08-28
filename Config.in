@@ -3,7 +3,7 @@
 #source "$NERVES_DEFCONFIG_DIR/package/eglinfo/Config.in"
 #source "$NERVES_DEFCONFIG_DIR/package/libwpe/Config.in"
 #source "$NERVES_DEFCONFIG_DIR/package/wpebackend-fdo/Config.in"
-#source "$NERVES_DEFCONFIG_DIR/package/wpebackend-rdk/Config.in"
+source "$NERVES_DEFCONFIG_DIR/package/wpebackend-rdk/Config.in"
 #source "$NERVES_DEFCONFIG_DIR/package/wpewebkit/Config.in"
 
 
