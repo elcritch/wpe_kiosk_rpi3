@@ -6,8 +6,8 @@
 
 COG_RDK_VERSION = 063df115456a24e464d1e6f284df22a0e65aea8e
 COG_RDK_SITE = $(call github,Igalia,cog,$(COG_VERSION))
-COG_RDK_DEPENDENCIES = libglib2 
-#COG_RDK_DEPENDENCIES = libglib2 libwpe_rdk wpewebkit_rdk
+#COG_RDK_DEPENDENCIES = libglib2 
+COG_RDK_DEPENDENCIES = libglib2 libwpe-rdk wpewebkit-rdk
 COG_RDK_LICENSE = MIT
 COG_RDK_LICENSE_FILES = COPYING
 COG_RDK_CONF_OPTS = \
