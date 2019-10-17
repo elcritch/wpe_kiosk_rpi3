@@ -4,7 +4,7 @@ set -e
 
 ln -rsf $TARGET_DIR/usr/lib/libGLESv2.so $TARGET_DIR/usr/lib/libGLESv2.so.2
 ln -rsf $TARGET_DIR/usr/lib/libEGL.so $TARGET_DIR/usr/lib/libEGL.so.1
-ln -rsf $TARGET_DIR/usr/lib/libWPEBackend-rdk-*.so $TARGET_DIR/usr/lib/libWPEBackend-default.so
+ln -rsf $TARGET_DIR/usr/lib/libWPEBackend-rdk.so $TARGET_DIR/usr/lib/libWPEBackend-default.so
 
 # Create the revert script for manually switching back to the previously
 # active firmware.
